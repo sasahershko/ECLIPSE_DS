@@ -1,7 +1,6 @@
-package tema1;
+package sesion1;
 
-public class ElectriCar {
-	
+public class Car2 {
 
 	public static final String MARCA_POR_DEFECTO = "Peugeot";
 	public static final String MODELO_POR_DEFECTO = "208";
@@ -10,30 +9,35 @@ public class ElectriCar {
 	private String marca;
 	private String modelo;
 	private String color;
-	private Engine motor = new Engine("Electrico");
 	
 	//CONSTRUCTOR
-	public ElectriCar() {
-		this(ElectriCar.MARCA_POR_DEFECTO);
+	public Car2() {
+		this(Car2.MARCA_POR_DEFECTO);
 	}
 	
-	public ElectriCar(String marca) {
-		this(marca, ElectriCar.MODELO_POR_DEFECTO);
+	public Car2(String marca) {
+		this(marca, Car2.MODELO_POR_DEFECTO);
 	}
-	public ElectriCar(String marca, String modelo) {
-		this(marca, modelo, ElectriCar.COLOR_POR_DEFECTO);
+	public Car2(String marca, String modelo) {
+		this(marca, modelo, Car2.COLOR_POR_DEFECTO);
 	}
-	
-	public ElectriCar(String marca, String modelo, String color) {
+	public Car2(String marca, String modelo, String color) {
 		super();
 		this.marca = marca;
 		this.modelo = modelo;
 		this.color = color;
 	}
 	
+
+	public void avanzar() {
+		System.out.println("Avanzando...");
+	}
+	
+	public void parar() {
+		System.out.println("Parado.");
+	}
 	
 	//GETTERS Y SETTERS
-
 	public void setMarca(String marca){
 		this.marca = marca;
 	}
@@ -58,20 +62,21 @@ public class ElectriCar {
 		return this.color;
 	}
 	
-	public void avanzar() {
-		System.out.println("Avanzando...");
-	}
-	
-	public void parar() {
-		System.out.println("Parado.");
-	}
-	
 	//MAIN
 	public static void main(String[] args) {
-		ElectriCar electric = new ElectriCar();
+		Car2 myCar = new Car2("Peugeot", "208", "rojo");
+		Car2 yourCar = new Car2("Land Rover", "Discovery", "gris");
+		Car2 carEjemplo = new Car2();
 		
-		electric.motor.encender();
-		electric.avanzar();
+		//Movemos el Peugeout
+		myCar.avanzar();
+		
+		carEjemplo.setMarca("LandRover");
+		carEjemplo.setModelo("208");
+		carEjemplo.setColor("Rosa");
+		carEjemplo.getMarca();
+		carEjemplo.getModelo();
+		carEjemplo.getColor();
 	}
 
 }

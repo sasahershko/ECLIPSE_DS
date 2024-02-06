@@ -1,4 +1,4 @@
-package tema1;
+package sesion1;
 
 public class Car {
 
