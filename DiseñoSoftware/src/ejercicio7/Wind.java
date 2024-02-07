@@ -1,6 +1,6 @@
-package ejercicio6;
+package ejercicio7;
 
-public class Wind extends Instrument{
+public class Wind implements InstrumentInterface{
 	
 	public void play(Note n) {
 		System.out.println("Wind.play() "  + n);
