@@ -8,11 +8,12 @@ public class Car{
     //Es opcional que tenga motor ? - relación débil
     private Engine motor;
 
-    public Car(String marca, String modelo, String color){
+    public Car(String marca, String modelo, String color, Engine motor){
         super();
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
+        this.motor = motor;
     }
 
     //En el caso de que queramos un motor lo setteamos
@@ -32,10 +33,11 @@ public class Car{
     }
 
     public static void main(String[] args) {
-        Car electricCar = new Car("Tesla", "Model3", "rojo");
         Engine electricEngine = new Engine("Eléctrico");
+        Car electricCar = new Car("Tesla", "Model3", "rojo", electricEngine);
 
-        electricCar.setMotor(electricEngine);
+
+        //electricCar.setMotor(electricEngine);
         electricCar.motor.encender();
         electricCar.avanzar();
     }
