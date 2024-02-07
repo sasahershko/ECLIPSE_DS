@@ -1,4 +1,4 @@
-package EjerciciosSesion2;
+package ejercicio4;
 
 public class Engine {
     public final static String TIPO_POR_DEFECTO = "Eléctrico";
@@ -15,7 +15,7 @@ public class Engine {
 	
     //MÉTODO
 	public void encender() {
-		System.out.println("¡" + this.tipo + " encendido!");
+        System.out.println("¡" + this.tipo + " encendido!");
 	}
 	
     public String toString(){
