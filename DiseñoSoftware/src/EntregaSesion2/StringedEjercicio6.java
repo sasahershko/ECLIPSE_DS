@@ -1,4 +1,4 @@
-package EntregaSesion2;
+package entregaSesion2;
 
 public class StringedEjercicio6 extends InstrumentEjercicio6{
     public void play(NoteEjercicio6 n) {

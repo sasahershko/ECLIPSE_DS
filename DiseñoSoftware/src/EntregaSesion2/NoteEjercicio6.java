@@ -1,4 +1,4 @@
-package EntregaSesion2;
+package entregaSesion2;
 
 public enum NoteEjercicio6 {
 	DO, RE, MI;

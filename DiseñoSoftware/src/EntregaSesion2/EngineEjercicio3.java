@@ -1,4 +1,4 @@
-package EntregaSesion2;
+package entregaSesion2;
 
 public class EngineEjercicio3 {
     public final static String TIPO_POR_DEFECTO = "Eléctrico";

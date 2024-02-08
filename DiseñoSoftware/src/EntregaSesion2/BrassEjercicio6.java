@@ -1,4 +1,4 @@
-package EntregaSesion2;
+package entregaSesion2;
 
 public class BrassEjercicio6 extends WindEjercicio6 implements ElectricSoundEjercicio6{
 

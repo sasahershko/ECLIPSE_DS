@@ -1,4 +1,4 @@
-package EntregaSesion2;
+package entregaSesion2;
 
 public class WoodWindEjercicio7 extends WindEjercicio7 {
 

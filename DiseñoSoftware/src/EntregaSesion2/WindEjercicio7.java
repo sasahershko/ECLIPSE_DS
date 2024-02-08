@@ -1,4 +1,4 @@
-package EntregaSesion2;
+package entregaSesion2;
 
 public class WindEjercicio7 implements InstrumentInterfaceEjercicio7{
 	
