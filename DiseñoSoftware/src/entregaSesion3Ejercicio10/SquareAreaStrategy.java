@@ -1,10 +1,10 @@
 package entregaSesion3Ejercicio10;
 
 public class SquareAreaStrategy implements AreaStrategy{
-	//calcular el área cuadrado
-	@Override
-	public Double calcularArea(Double medida) {
-		return medida*medida;
-	}
 
+
+    public void CalculaArea(Double num){  
+                                                        //El número en este caso es el radio
+        System.out.println("El área del cuadrado es de: " + String.format("%.2f", num*num) + " cms."); //String format es para que salgan sólo 2 decimales
+    } 
 }
