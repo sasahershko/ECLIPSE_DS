@@ -1,4 +1,4 @@
-package entregaEjercicio12;
+package entregaEjercicio12w;
 
 public class Square implements GeometricArea{
     

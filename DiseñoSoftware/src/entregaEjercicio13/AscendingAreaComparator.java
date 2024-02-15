@@ -1,8 +1,9 @@
 package entregaEjercicio13;
+import java.util.Comparator;
 
-public class AscendingAreaComparator{
-    public int compare(GeometricArea geo1, GeometricArea geo2){
-        return geo1.getArea().compareTo(geo2.getArea());
+public class AscendingAreaComparator implements Comparator<GeometricArea>{
+    public int compare(GeometricArea geometricArea1, GeometricArea geometricArea2){
+        return geometricArea1.getArea().compareTo(geometricArea2.getArea());
     }
     
 }

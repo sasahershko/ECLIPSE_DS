@@ -1,7 +1,7 @@
 package entregaEjercicio13;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.List;
+
 //SIGNATURA : lo que designa la propia clase (primera fila)
                                                     
 public class InyectionContextAreaStrategy extends ContextAreaStrategy{ //Especialización de..
@@ -33,5 +33,9 @@ public class InyectionContextAreaStrategy extends ContextAreaStrategy{ //Especia
         for(GeometricArea form : geometricAreaList){
             System.out.println(form);
         }
+    }
+
+    public ArrayList<GeometricArea> getGeometricAreaList(){
+        return this.geometricAreaList;
     }
 }
