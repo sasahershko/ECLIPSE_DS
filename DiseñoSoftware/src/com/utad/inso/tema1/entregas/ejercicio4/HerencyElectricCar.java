@@ -8,5 +8,6 @@ public class HerencyElectricCar extends Car{
 
     public static void main(String[] args) {
         Car car = new HerencyElectricCar("Tesla", "Model3", "rojo");
+        System.out.println(car);
     }
 }

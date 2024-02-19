@@ -65,7 +65,7 @@ public class Car2 {
 	//MAIN
 	public static void main(String[] args) {
 		Car2 myCar = new Car2("Peugeot", "208", "rojo");
-		Car2 yourCar = new Car2("Land Rover", "Discovery", "gris");
+		//Car2 yourCar = new Car2("Land Rover", "Discovery", "gris");
 		Car2 carEjemplo = new Car2();
 		
 		//Movemos el Peugeout

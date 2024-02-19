@@ -1,0 +1,13 @@
+GUARDERÍA
+
+- Dr.Wang(oculista) examina 15 cada mes
+- DrFong(logopeda) 28 cada mes
+
+PARA LAS VISITAS SE DEBE:
+- Examinar a los niños
+- Enviar los padres la factura
+- Enviar a los padres el resultado de examen
+
+CLIENTE: GUARDERÍA
+DOCTOR1: ESTRATEGIA1
+DOCTOR2: ESTRATEGIA2

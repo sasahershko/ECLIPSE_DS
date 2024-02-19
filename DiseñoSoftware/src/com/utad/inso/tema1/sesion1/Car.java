@@ -29,7 +29,7 @@ public class Car {
 		//MAIN
 	public static void main(String[] args) {
 		Car myCar = new Car("Peugeot", "208", "rojo");
-		Car yourCar = new Car("Land Rover", "Discovery", "gris");
+		//Car yourCar = new Car("Land Rover", "Discovery", "gris");
 		
 		//Movemos el Peugeout
 		myCar.avanzar();
