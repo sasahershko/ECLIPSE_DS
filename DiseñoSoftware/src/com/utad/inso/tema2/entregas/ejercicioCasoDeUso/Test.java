@@ -31,7 +31,7 @@ public class Test {
                     salirDeMenu=0;
                 break;
                 default:
-                    System.out.println("Elija una opción válida.\n");
+                    System.out.println("Elija una opción válida. Este día no se realizan revisiones.\n");
                 break;
             }
 
