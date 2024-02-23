@@ -1,36 +1,54 @@
 package com.utad.inso.tema2.entregas.ejercicio15PULL;
-
 import java.util.ArrayList;
 
-public class ConcreteIntegerSubject implements Subject{
+public class ConcreteIntegerSubject implements PullSubject{
     
-    private ArrayList<Observer> subjects;
+    private ArrayList<PullObserver> observers;
+    private Integer condition;
 
-    public ConcreteIntegerSubject(Subject subject){
-        this.subjects = new ArrayList<Observer>();
+    public ConcreteIntegerSubject(){
+        this(0);
     }
 
-    public ArrayList<Observer> getSubjectState(){
-        return this.subjects;
+    public ConcreteIntegerSubject(Integer condition){
+        this(condition, new ArrayList<PullObserver>());
     }
 
-    public void setSubjectState(ArrayList<Observer> subjects){
-        this.subjects = subjects;
+    public ConcreteIntegerSubject(Integer condition, ArrayList<PullObserver> arrayList){
+        this.condition=condition;
+        this.observers = new ArrayList<PullObserver>();
+    }
+
+    public ArrayList<PullObserver> getSubjectState(){
+        return this.observers;
+    }
+
+    public void setSubjectState(ArrayList<PullObserver> observers){
+        this.observers = observers;
+    }
+
+    public Integer getCondition(){
+        return this.condition;
+    }
+
+    public void setCondition(Integer condition){
+        this.condition=condition;
+        this.notify();
     }
 
     @Override
-    public void attach(Observer o) {
-        this.subjects.add(o);
+    public void attach(PullObserver o) {
+        this.observers.add(o);
     }
 
     @Override
-    public void detach(Observer o) {
-       this.subjects.remove(o);
+    public void detach(PullObserver o) {
+       this.observers.remove(o);
     }
 
     @Override
-    public void notifyObservers(Observer o) {
-        for(Observer o: this.observers){
+    public void notifyObservers() {
+        for(PullObserver o: this.observers){
             o.update();
         }
     }   
