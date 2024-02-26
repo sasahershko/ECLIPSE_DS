@@ -1,6 +1,8 @@
-package com.utad.inso.tema2.entregas.ejercicio15PULL;
+package com.utad.inso.tema2.entregas.ejercicio15PULLJavaUtil;
+import java.util.Observable;
+import java.util.Observer;
 
-public class OctIntegerObserver implements PullObserver{
+public class OctIntegerObserver implements Observer{
     
     ConcreteIntegerSubject concreteIntegerSubject;
 
@@ -9,7 +11,7 @@ public class OctIntegerObserver implements PullObserver{
     }
     @Override
     
-    public void update() {
+    public void update(Observable observable, Object arg) {
         System.out.println("Oct as String: " + Integer.toOctalString(this.concreteIntegerSubject.getCondition()));
     }
     

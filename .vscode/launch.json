@@ -2,6 +2,48 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "PullObserverPatternTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.ejercicio15PULLJavaUtil.PullObserverPatternTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "PullObserverPatternTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.ejercicio17PULLPUSH.PullObserverPatternTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "A",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.A.A",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "PullObserverPatternTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.ejercicio17PULL.PullObserverPatternTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "PullObserverPatternTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.ejercicio15PULL.PullObserverPatternTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "PushObserverPatternTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.ejercicio16PUSH.PushObserverPatternTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

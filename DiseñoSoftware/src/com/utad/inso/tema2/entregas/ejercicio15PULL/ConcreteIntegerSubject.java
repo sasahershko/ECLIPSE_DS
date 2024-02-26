@@ -33,7 +33,7 @@ public class ConcreteIntegerSubject implements PullSubject{
 
     public void setCondition(Integer condition){
         this.condition=condition;
-        this.notify();
+        this.notifyObservers();
     }
 
     @Override
@@ -49,6 +49,7 @@ public class ConcreteIntegerSubject implements PullSubject{
     @Override
     public void notifyObservers() {
         for(PullObserver o: this.observers){
+            //En este caso actualizamos objeto, mientras que en el pull actualizaremos el Integer (caso concreto)
             o.update();
         }
     }   

@@ -1,12 +1,12 @@
-package com.utad.inso.tema2.entregas.ejercicio15PULL;
+package com.utad.inso.tema2.entregas.ejercicio16PUSH;
 
-public class PullObserverPatternTest {
+public class PushObserverPatternTest {
     public static void main(String[] args) {
         ConcreteIntegerSubject concreteIntegerSubject = new ConcreteIntegerSubject();
 
-        PullObserver binaryIntegerObserver = new BinaryIntegerObserver(concreteIntegerSubject);
-        PullObserver hexIntegerObserver = new HexIntegerObserver(concreteIntegerSubject);
-        PullObserver octIntegerObserver = new OctIntegerObserver(concreteIntegerSubject);
+        PushObserver binaryIntegerObserver = new BinaryIntegerObserver(concreteIntegerSubject);
+        PushObserver hexIntegerObserver = new HexIntegerObserver(concreteIntegerSubject);
+        PushObserver octIntegerObserver = new OctIntegerObserver(concreteIntegerSubject);
 
         concreteIntegerSubject.attach(binaryIntegerObserver);
         concreteIntegerSubject.attach(hexIntegerObserver);
