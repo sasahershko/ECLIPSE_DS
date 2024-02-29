@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LibraryPullPushObserverTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoObserver.LibraryPullPushObserverTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
       "name": "PullObserverPatternTest",
       "request": "launch",
       "mainClass": "com.utad.inso.tema2.entregas.ejercicio15PULLJavaUtil.PullObserverPatternTest",

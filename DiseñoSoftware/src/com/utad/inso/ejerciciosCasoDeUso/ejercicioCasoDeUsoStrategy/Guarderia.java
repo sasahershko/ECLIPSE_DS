@@ -1,4 +1,4 @@
-package com.utad.inso.tema2.entregas.ejercicio14CasoDeUso;
+package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoStrategy;
 
 public class Guarderia {
     public static final RevisionStrategy CONTEXTO_POR_DEFECTO = new Logopeda();

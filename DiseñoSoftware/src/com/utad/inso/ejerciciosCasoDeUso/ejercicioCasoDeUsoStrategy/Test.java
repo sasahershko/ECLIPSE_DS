@@ -1,4 +1,4 @@
-package com.utad.inso.tema2.entregas.ejercicio14CasoDeUso;
+package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoStrategy;
 import java.util.Scanner;
 
 public class Test {

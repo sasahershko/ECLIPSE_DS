@@ -2,7 +2,6 @@ package com.utad.inso.tema2.entregas.ejercicio17PULLPUSH;
 import java.util.Observable;
 import java.util.Observer;
 
-
 public class PullModelObserver implements Observer{
     protected String name;
 
