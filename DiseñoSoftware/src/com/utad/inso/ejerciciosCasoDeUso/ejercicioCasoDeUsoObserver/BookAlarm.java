@@ -1,24 +1,53 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoObserver;
-import java.util.Observable;
+import java.util.ArrayList;
 
-public class BookAlarm extends Observable{
-    public static BookState DEFAULT_BOOK_STATE = BookState.GOOD;
+public class BookAlarm implements PushSubject{
+    public static final BookState DEFAULT_CONDITION = BookState.GOOD;
 
-    private BookState bookState;
+    private ArrayList<PushObserver> observers;
+    private BookState state;
+    //private Book book;
 
     public BookAlarm(){
-        this(BookAlarm.DEFAULT_BOOK_STATE);
+        this(BookAlarm.DEFAULT_CONDITION);
     }
-    public BookAlarm(BookState bookState){
-        this.bookState = bookState;
+    public BookAlarm(BookState state){
+        this(state, new ArrayList<PushObserver>());
+    }
+    public BookAlarm(BookState state, ArrayList<PushObserver> observers){
+        this.state=state;
+        this.observers=observers;
     }
 
-    public BookState getBookState(){
-        return this.bookState;
+    public void setSubjectState(BookState state){
+        this.state=state;
     }
-    public void setBookState(BookState bookState){
-        this.bookState=bookState;
-        setChanged();
-        this.notifyObservers(this.bookState);
+    public BookState getSubjectState(){
+        return this.state;
     }
+
+    public void setObservers(ArrayList<PushObserver> observers){
+        this.observers=observers;        
+    }
+    public ArrayList<PushObserver> getObservers(){
+        return this.observers;
+    }
+
+    @Override
+    public void attach(PushObserver o) {
+        this.observers.add(o);
+    }
+
+    @Override
+    public void detach(PushObserver o) {
+       this.observers.remove(o);
+    }
+
+    @Override
+    public void notifyObservers() {
+        for(PushObserver o: this.observers){
+            o.update(this.state);
+        }
+    }
+
 }

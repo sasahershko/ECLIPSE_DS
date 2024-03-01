@@ -1,5 +1,5 @@
 BOOKALARM -> Observable
 ADMIN, COMPRAS, STOCK -> OBSERVAN
 
-BOOK ->?
-LIBRARY -> ? es la que realiza todo se supone
+BOOK -> metemos toda información, incluido el estado del libro
+LIBRARY -> ? es la que realiza todo 

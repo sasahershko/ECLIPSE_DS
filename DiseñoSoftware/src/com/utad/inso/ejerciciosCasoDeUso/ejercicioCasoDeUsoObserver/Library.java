@@ -1,22 +1,23 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoObserver;
-import java.util.Observable;
 
-public class Library extends BookAlarm{
-    //BookAlarm bookAlarm = new BookAlarm();
+public class Library{
+    BookAlarm bookAlarm;
+
+    public Library(BookAlarm bookAlarm){
+        this.bookAlarm=bookAlarm;
+    }
+
+    public void addObserver(PushObserver o){
+        this.bookAlarm.attach(o);
+    }
+    public void removeObserver(PushObserver o){
+        this.bookAlarm.detach(o);
+    }
 
     public void returnBook(Book book){
         if(book.getBookState() == BookState.BAD){
-            //bookAlarm.setBookState(BookState.BAD);
+            this.bookAlarm.notifyObservers();
+            book.bookInfo();
         }
     }
 }
-
-//NOTAS
-//dañádo - estado de una clase
-//AlarmaLibro - el observable  (mirar: cómo lo metemos en el diagrama)
-//bookAlarm implementa de pullpushModel...
-
-//basically:
-//Si el lector devuelve el libro dañado -> se ven afectadas stock, compras y administración
-//Si el libro se vuelve en mal estado -> avisa a objeto BookAlarm
-//Clase/Interfaz BookAlarm es sujeto de interés para stock, compras y admin ->OBSERVADORAS DE CLASE BOOKALARM
