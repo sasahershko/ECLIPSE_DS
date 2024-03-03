@@ -4,7 +4,12 @@ public class StockDepartmentObserver implements PushObserver{
 
     @Override
     public void update(Object o) {
-        System.out.println("[StockDepartmentObserver Push] se ha devuelto el libro en mal estado.");
+        if(o!=null){
+            System.out.println("[StockDepartmentObserver Push] se ha devuelto el libro en mal estado.\n"+ ((Book)o).toString());
+        }
+        else{
+            System.out.println("[StockDepartmentObserver Push] se ha devuelto el libro en mal estado.");
+        }
     }
     
 }

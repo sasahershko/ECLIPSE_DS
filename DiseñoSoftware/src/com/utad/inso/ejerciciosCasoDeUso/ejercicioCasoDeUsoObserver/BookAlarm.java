@@ -1,29 +1,28 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoObserver;
 import java.util.ArrayList;
 
-public class BookAlarm implements PushSubject{
+public class BookAlarm implements PushSubject {
     public static final BookState DEFAULT_CONDITION = BookState.GOOD;
 
     private ArrayList<PushObserver> observers;
-    private BookState state;
-    //private Book book;
+    private Book book;
 
     public BookAlarm(){
-        this(BookAlarm.DEFAULT_CONDITION);
+        this(new Book(null,null,null));
     }
-    public BookAlarm(BookState state){
-        this(state, new ArrayList<PushObserver>());
+    public BookAlarm(Book book){
+        this(book, new ArrayList<PushObserver>());
     }
-    public BookAlarm(BookState state, ArrayList<PushObserver> observers){
-        this.state=state;
+    public BookAlarm(Book book, ArrayList<PushObserver> observers){
+        this.book=book;
         this.observers=observers;
     }
 
-    public void setSubjectState(BookState state){
-        this.state=state;
+    public void setBook(Book book){
+        this.book=book;
     }
-    public BookState getSubjectState(){
-        return this.state;
+    public Book getSubjectState(){
+        return this.book;
     }
 
     public void setObservers(ArrayList<PushObserver> observers){
@@ -46,7 +45,7 @@ public class BookAlarm implements PushSubject{
     @Override
     public void notifyObservers() {
         for(PushObserver o: this.observers){
-            o.update(this.state);
+            o.update(this.book);
         }
     }
 

@@ -1,7 +1,12 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoObserver;
 
 public class Library{
+
     BookAlarm bookAlarm;
+
+    public Library(){
+        this(new BookAlarm());
+    }
 
     public Library(BookAlarm bookAlarm){
         this.bookAlarm=bookAlarm;
@@ -16,8 +21,8 @@ public class Library{
 
     public void returnBook(Book book){
         if(book.getBookState() == BookState.BAD){
+            this.bookAlarm.setBook(book);
             this.bookAlarm.notifyObservers();
-            book.bookInfo();
         }
     }
 }

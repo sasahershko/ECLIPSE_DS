@@ -4,7 +4,12 @@ public class AdminDepartmentObserver implements PushObserver{
 
     @Override
     public void update(Object o) {
-        System.out.println("[AdminDepartmentObserver Push] se ha devuelto el libro en mal estado.");
+        if(o!=null){
+            System.out.println("[AdminDepartmentObserver Push] se ha devuelto el libro en mal estado.\n" + ((Book)o).toString());
+        }
+        else{
+            System.out.println("[AdminDepartmentObserver Push] se ha devuelto el libro en mal estado.");
+        }  
     }
     
 }

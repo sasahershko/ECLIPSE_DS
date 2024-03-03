@@ -31,10 +31,10 @@ public class Book {
         this.bookState=bookState;
     }
 
-    public void bookInfo(){
-        System.out.println("Book [title=" + this.bookName + ", autor=" + this.autorName + ", bookState=" + 
-        this.bookState +"]"); 
-    }
+    //public void bookInfo(){
+    //    System.out.println("Book [title=" + this.bookName + ", autor=" + this.autorName + ", bookState=" + 
+    //    this.bookState +"]"); 
+    //}
     public String toString(){
         return "Book [title=" + this.bookName + ", autor=" + this.autorName + ", bookState=" + 
         this.bookState +"]";

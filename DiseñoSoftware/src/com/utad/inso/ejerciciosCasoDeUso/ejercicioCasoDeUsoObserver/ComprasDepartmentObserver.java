@@ -4,7 +4,13 @@ public class ComprasDepartmentObserver implements PushObserver{
 
     @Override
     public void update(Object o) {
-        System.out.println("[ComprasDepartmentObserver Push] se ha devuelto el libro en mal estado.");    
+        if(o!=null){
+            System.out.println("[ComprasDepartmentObserver Push] se ha devuelto el libro en mal estado.\n" + ((Book)o).toString());    
+        }
+        else{
+            System.out.println("[ComprasDepartmentObserver Push] se ha devuelto el libro en mal estado.");    
+        }
+        
     }
     
 }
