@@ -21,7 +21,7 @@ public class BookAlarm implements PushSubject {
     public void setBook(Book book){
         this.book=book;
     }
-    public Book getSubjectState(){
+    public Book getBook(){
         return this.book;
     }
 

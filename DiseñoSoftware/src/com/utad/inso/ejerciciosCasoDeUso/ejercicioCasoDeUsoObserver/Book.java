@@ -21,20 +21,16 @@ public class Book {
     public Book(String bookName, String autorName, BookState bookState){
         this.bookName=bookName;
         this.autorName=autorName;
-        this.bookState = bookState;
+        this.bookState=bookState;
     }
     
-    public BookState getBookState(){
-        return this.bookState;
-    }
     public void setBookState(BookState bookState){
         this.bookState=bookState;
     }
+    public BookState getBookState(){
+        return this.bookState;
+    }
 
-    //public void bookInfo(){
-    //    System.out.println("Book [title=" + this.bookName + ", autor=" + this.autorName + ", bookState=" + 
-    //    this.bookState +"]"); 
-    //}
     public String toString(){
         return "Book [title=" + this.bookName + ", autor=" + this.autorName + ", bookState=" + 
         this.bookState +"]";

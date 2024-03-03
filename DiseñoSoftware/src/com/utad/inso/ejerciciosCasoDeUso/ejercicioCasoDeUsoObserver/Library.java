@@ -2,7 +2,7 @@ package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoObserver;
 
 public class Library{
 
-    BookAlarm bookAlarm;
+    private BookAlarm bookAlarm;
 
     public Library(){
         this(new BookAlarm());
