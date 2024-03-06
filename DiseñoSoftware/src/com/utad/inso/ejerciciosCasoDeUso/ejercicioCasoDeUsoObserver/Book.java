@@ -9,6 +9,7 @@ public class Book {
     private String autorName;
     private BookState bookState;
    
+    //Constructores
     public Book(){
         this(Book.BOOK_NAME_DEFAULT);
     }
@@ -24,6 +25,7 @@ public class Book {
         this.bookState=bookState;
     }
     
+    //SETTERS y GETTERS
     public void setBookState(BookState bookState){
         this.bookState=bookState;
     }

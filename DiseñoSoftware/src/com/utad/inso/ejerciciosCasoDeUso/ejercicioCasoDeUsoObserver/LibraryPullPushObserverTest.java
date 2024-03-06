@@ -5,9 +5,9 @@ public class LibraryPullPushObserverTest {
         Library library = new Library();
         
         //Instancia los departamentos Stock, Admin y Compras como observadores
-        PushObserver stockDepartmentObserver= new StockDepartmentObserver();
-        PushObserver adminDepartmentObserver= new AdminDepartmentObserver();
-        PushObserver comprasDepartmentObserver= new ComprasDepartmentObserver();
+        PushObserver stockDepartmentObserver=new StockDepartmentObserver();
+        PushObserver adminDepartmentObserver=new AdminDepartmentObserver();
+        PushObserver comprasDepartmentObserver=new ComprasDepartmentObserver();
 
         //Provoca que los departamentos se suscriban a la biblioteca
         library.addObserver(stockDepartmentObserver);
