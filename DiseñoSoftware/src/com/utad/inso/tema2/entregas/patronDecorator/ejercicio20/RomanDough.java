@@ -1,23 +1,24 @@
-package com.utad.inso.tema2.entregas.patronDecorator.ejercicio19;
+package com.utad.inso.tema2.entregas.patronDecorator.ejercicio20;
 
-public class TraditionalDough implements PizzaBaseComponent{
-    public static final Double DEFAULT_PRICE = 8.0;
-    public static final String DEFAULT_NAME = "Napolitana";
+public class RomanDough implements PizzaBaseComponent{
+
+    public static final Double DEFAULT_PRICE = 9.0;
+    public static final String DEFAULT_NAME = "Romana";
 
     private Double unitPrice;
     private String name;
     private DoughType doughType;
 
-    public TraditionalDough(){
-        this(TraditionalDough.DEFAULT_PRICE);
+    public RomanDough(){
+        this(RomanDough.DEFAULT_PRICE);
     }
-    public TraditionalDough(Double unitPrice){
-        this(unitPrice, TraditionalDough.DEFAULT_NAME);
+    public RomanDough(Double unitPrice){
+        this(unitPrice, RomanDough.DEFAULT_NAME);
     }
-    public TraditionalDough(Double unitPrice, String name){
+    public RomanDough(Double unitPrice, String name){
         this(unitPrice, name, DoughType.GRUESA);
     }
-    public TraditionalDough(Double unitPrice, String name, DoughType doughType){
+    public RomanDough(Double unitPrice, String name, DoughType doughType){
         super();
         this.unitPrice=unitPrice;
         this.name=name;
@@ -36,7 +37,6 @@ public class TraditionalDough implements PizzaBaseComponent{
 
     @Override
     public String getDescription() {
-        //
         return "[TraditionalDough] Name=" + this.name + ", doughType=" + this.doughType + ", unitPrice=" + this.unitPrice;
     }
 
@@ -59,7 +59,7 @@ public class TraditionalDough implements PizzaBaseComponent{
     @Override
     public Integer toppingsNumber() {
         //AL SER UN COMPONENTE BASE CORRESPONDE CON EL PRECIO BBASE
-        return 0;    
+        return 0;     
     }
 
     @Override

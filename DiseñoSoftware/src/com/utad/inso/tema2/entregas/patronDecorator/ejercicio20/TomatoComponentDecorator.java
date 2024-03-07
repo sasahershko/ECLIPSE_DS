@@ -1,4 +1,4 @@
-package com.utad.inso.tema2.entregas.patronDecorator.ejercicio19;
+package com.utad.inso.tema2.entregas.patronDecorator.ejercicio20;
 
 public class TomatoComponentDecorator extends AbstractToppingComponentDecorator{
 
