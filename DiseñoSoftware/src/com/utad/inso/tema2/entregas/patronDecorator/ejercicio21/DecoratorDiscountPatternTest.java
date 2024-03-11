@@ -1,4 +1,4 @@
-package com.utad.inso.tema2.entregas.patronDecorator.ejercicio20;
+package com.utad.inso.tema2.entregas.patronDecorator.ejercicio21;
 
 import java.text.DecimalFormat;
 

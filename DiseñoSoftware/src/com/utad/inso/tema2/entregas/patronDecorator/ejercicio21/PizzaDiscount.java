@@ -1,7 +1,6 @@
-package com.utad.inso.tema2.entregas.patronDecorator.ejercicio20;
+package com.utad.inso.tema2.entregas.patronDecorator.ejercicio21;
 
 public class PizzaDiscount extends AbstractToppingComponentDecorator{
-    
     public static Double DEFAULT_DISCOUNT = 0.0;
 
     private Double discount;

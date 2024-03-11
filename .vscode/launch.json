@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DecoratorDiscountPatternTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronDecorator.ejercicio20.DecoratorDiscountPatternTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
       "name": "LibraryPullPushObserverTest",
       "request": "launch",
       "mainClass": "com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoObserver.LibraryPullPushObserverTest",
