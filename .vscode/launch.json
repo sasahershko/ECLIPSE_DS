@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TrafficLightTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronState.ejercicio25b.TrafficLightTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "TrafficLightTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronState.ejercicio25.TrafficLightTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
       "name": "DecoratorDiscountPatternTest",
       "request": "launch",
       "mainClass": "com.utad.inso.tema2.entregas.patronDecorator.ejercicio20.DecoratorDiscountPatternTest",
