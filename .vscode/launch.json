@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "KinderGardenDecoratorTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator.KinderGardenDecoratorTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "DecoratorComponentPatternTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronDecorator.ejercicio19.DecoratorComponentPatternTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
       "name": "TrafficLightTest",
       "request": "launch",
       "mainClass": "com.utad.inso.tema2.entregas.patronState.ejercicio25b.TrafficLightTest",

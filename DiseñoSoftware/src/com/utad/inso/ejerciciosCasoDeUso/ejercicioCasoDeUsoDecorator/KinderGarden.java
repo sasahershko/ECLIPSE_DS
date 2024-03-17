@@ -14,6 +14,17 @@ public class KinderGarden {
     }
 
     public void checkBabies(){
-      System.out.println("chekeando beibis");  
+      System.out.println("====Pasamos lista=============");  
+        for(KinderGardenBaby baby : this.babies){
+            System.out.println(baby.getDescrtiption());
+        }
+    }
+
+    public ArrayList<KinderGardenBaby> getBabies(){
+        return this.babies;
+    }
+
+    public void setBabies(KinderGardenBaby baby){
+        this.babies.add(baby);
     }
 }

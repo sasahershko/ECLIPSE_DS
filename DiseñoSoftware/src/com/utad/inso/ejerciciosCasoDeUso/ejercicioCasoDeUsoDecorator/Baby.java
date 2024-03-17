@@ -2,8 +2,8 @@ package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator;
 
 public class Baby {
     //nombre, apodo edad
-    public static final String DEFAULT_NAME = "Not specified.";
-    public static final String DEFAULT_NICKNAME = "Not specified.";
+    public static final String DEFAULT_NAME = "Not specified";
+    public static final String DEFAULT_NICKNAME = "Not specified";
     public static final Integer DEFAULT_AGE = 0;
 
     private String name;

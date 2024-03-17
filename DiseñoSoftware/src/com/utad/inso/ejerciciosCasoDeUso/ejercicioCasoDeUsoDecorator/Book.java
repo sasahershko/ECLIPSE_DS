@@ -21,7 +21,7 @@ public class Book {
     public Book(String bookName, String authorName,BookState bookState){
         this.bookName=bookName;
         this.authorName=authorName;
-        this.bookState=this.bookState;
+        this.bookState=bookState;
     }
 
     public void setBookName(String bookName){
@@ -41,5 +41,9 @@ public class Book {
     }
     public BookState getBookState(){
         return this.bookState;
+    }
+
+    public String toString(){
+        return "Book [title=" + this.bookName + ", author=" + ",bookState=" + this.bookState + "]";
     }
 }
