@@ -24,6 +24,5 @@ public class KinderGardenDecoratorTest {
         if(ines.getReward() instanceof BookRewardDecorator){
             System.out.println("Inés tiene el libro: " +book.getAuthorName());
         }
-
     }
 }
