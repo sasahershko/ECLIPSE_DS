@@ -1,14 +1,16 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator;
 
 public class Book {
-    //titulo,autor, estado
+    //Atributos por defecto
     public static final String DEFAULT_BOOK_NAME = "Not specified";
     public static final String DEFAULT_AUTHOR_NAME = "Not specified";
 
+    //Atributos
     protected String bookName;
     protected String authorName;
     protected BookState bookState;
 
+    //Delegación de constructores
     public Book(){
         this(Book.DEFAULT_BOOK_NAME);
     }
@@ -24,6 +26,7 @@ public class Book {
         this.bookState=bookState;
     }
 
+    //GETTERS Y SETTERS
     public void setBookName(String bookName){
         this.bookName=bookName;
     }
@@ -43,6 +46,7 @@ public class Book {
         return this.bookState;
     }
 
+    //ToString del libro
     public String toString(){
         return "Book [title=" + this.bookName + ", author=" + this.authorName +",bookState=" + this.bookState + "]";
     }

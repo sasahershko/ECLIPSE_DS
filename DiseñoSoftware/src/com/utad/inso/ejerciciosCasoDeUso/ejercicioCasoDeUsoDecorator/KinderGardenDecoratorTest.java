@@ -12,17 +12,17 @@ public class KinderGardenDecoratorTest {
         kinderGarden.addBaby(ines);
         kinderGarden.checkBabies(); //pasamos lista
 
-        //TODO Inés recibe el certificado de buena conducta
+        //Inés recibe el certificado de buena conducta
         ines.setReward(new ConductCertificateDecorator(ines.getReward()));
         kinderGarden.checkBabies(); //pasamos lista
 
-        //TODO Inés vuelve a recibir el premio de la semana
+        //Inés vuelve a recibir el premio de la semana
         ines.setReward(new BookRewardDecorator(ines.getReward(), book));
         kinderGarden.checkBabies(); //pasamos lista
 
-        //TODO Tiene Inés un libro por haber conseguido el premio de la semana?
+        //Tiene Inés un libro por haber conseguido el premio de la semana?
         if(ines.getReward() instanceof BookRewardDecorator){
-            System.out.println("Inés tiene el libro: " +book.getAuthorName());
+            System.out.println("Inés tiene el libro: " + book.getBookName());
         }
     }
 }

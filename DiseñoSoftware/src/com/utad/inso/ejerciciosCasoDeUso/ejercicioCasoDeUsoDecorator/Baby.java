@@ -1,15 +1,17 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator;
 
 public class Baby {
-    //nombre, apodo edad
+    //Atributos por defecto
     public static final String DEFAULT_NAME = "Not specified";
     public static final String DEFAULT_ALIAS = "Not specified";
     public static final Integer DEFAULT_AGE = 0;
 
+    //Atributos
     protected String name;
     protected String alias;
     protected Integer age;
 
+    //Delegación de constructores
     public Baby(){
         this(Baby.DEFAULT_NAME);
     }
