@@ -1,4 +1,4 @@
-package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator;
+package com.utad.inso.ejerciciosCasoDeUso.SI;
 
 public class KinderGardenDecoratorTest {
     public static void main(String[] args) {

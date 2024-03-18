@@ -1,8 +1,8 @@
-package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator;
+package com.utad.inso.ejerciciosCasoDeUso.SI;
 
 public class KinderGardenBaby extends Baby{
 
-    private RewardComponent rewardComponent;
+    public RewardComponent rewardComponent;
 
     public KinderGardenBaby(String name, String alias, Integer age){
         super(name, alias, age);

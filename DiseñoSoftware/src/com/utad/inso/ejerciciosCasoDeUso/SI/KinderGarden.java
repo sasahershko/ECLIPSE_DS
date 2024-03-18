@@ -1,4 +1,4 @@
-package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator;
+package com.utad.inso.ejerciciosCasoDeUso.SI;
 import java.util.ArrayList;
 
 public class KinderGarden {

@@ -1,4 +1,4 @@
-package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator;
+package com.utad.inso.ejerciciosCasoDeUso.SI;
 
 public class Baby {
     //nombre, apodo edad
@@ -6,9 +6,9 @@ public class Baby {
     public static final String DEFAULT_ALIAS = "Not specified";
     public static final Integer DEFAULT_AGE = 0;
 
-    protected String name;
-    protected String alias;
-    protected Integer age;
+    private String name;
+    private String alias;
+    private Integer age;
 
     public Baby(){
         this(Baby.DEFAULT_NAME);

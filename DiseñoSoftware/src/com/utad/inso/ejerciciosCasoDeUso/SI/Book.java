@@ -1,13 +1,13 @@
-package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator;
+package com.utad.inso.ejerciciosCasoDeUso.SI;
 
 public class Book {
     //titulo,autor, estado
     public static final String DEFAULT_BOOK_NAME = "Not specified";
     public static final String DEFAULT_AUTHOR_NAME = "Not specified";
 
-    protected String bookName;
-    protected String authorName;
-    protected BookState bookState;
+    private String bookName;
+    private String authorName;
+    private BookState bookState;
 
     public Book(){
         this(Book.DEFAULT_BOOK_NAME);
