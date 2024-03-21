@@ -26,6 +26,12 @@ public class LibraryLoanRequestContext {
         this.book=book;
         this.libraryUser=libraryUser;
 
+        //NOSE?????????
+        //le ponemos la fecha actual
+        this.createdDate = LocalDate.now();
+        //dependiendo de si es estudiante o docente, añadirá 10 o 15 días
+        this.pickUpDate = createdDate.plusDays(this.libraryUser.getUserType().getLoanDays());
+
         this.createdLibraryLoanState = new CreatedLibraryLoanState(this);
         this.admittedLibraryLoanState = new AdmittedLibraryLoanState(this);
         this.processedLibraryLoanState = new ProcessedLibraryLoanState(this);

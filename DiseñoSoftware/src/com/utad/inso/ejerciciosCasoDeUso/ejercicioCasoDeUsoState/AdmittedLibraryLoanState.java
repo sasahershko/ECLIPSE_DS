@@ -15,9 +15,9 @@ public class AdmittedLibraryLoanState implements LibraryLoanState {
         //los días disponibles del préstamos
         //DOCENTES = 10 DÍAS, ALUMNOS = 15
 
-        if(libraryLoanRequestContext.get){
+        // if(libraryLoanRequestContext.get){
 
-        }
+        // }
 
 
     }
