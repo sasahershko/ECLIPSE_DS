@@ -1,0 +1,10 @@
+Observer, strategy y state
+
+UN LIBRO PUEDE PASAR POR DIFERENTES ESTADOS:
+- Creada, se recogen los datos:Tipo de usuario (alumno,docente), Libro solicitado(título,autor)
+- Admitida: la petición ha sido admitida y queda pendiente de recogerse el libro de interés
+- Cursada: el libro se ha recogido para el disfrute del usuario
+- Finalizada: el libro ha sido devuelto
+- Rechazada: la petición de reserva ha sido rechazada
+
+
