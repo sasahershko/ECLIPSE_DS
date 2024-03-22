@@ -38,7 +38,7 @@ public class LibraryLoanRequestContext {
         this.finishedLibraryLoanState = new FinishedLibraryLoanState(this);
         this.declinedLibraryLoanState = new DeclinedLibraryLoanState();
 
-        //TODO como indicamos que la reserva comienza en estado Creada??????
+        //TODO como indicamos que la reserva comienza en estado Creada??
         this.currentState = createdLibraryLoanState;
     }
 
