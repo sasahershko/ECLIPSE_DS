@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "EnumSingletonTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronSingleton.Ejercicio30.EnumSingletonTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "LunchSoupOnDemandTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronSingleton.Ejercicio28.LunchSoupOnDemandTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "LunchSoupTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronSingleton.Ejercicio27.LunchSoupTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
       "name": "KinderGardenDecoratorTest",
       "request": "launch",
       "mainClass": "com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoDecorator.KinderGardenDecoratorTest",
