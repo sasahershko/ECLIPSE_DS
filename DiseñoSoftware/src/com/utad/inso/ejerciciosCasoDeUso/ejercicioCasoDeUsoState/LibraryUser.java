@@ -15,7 +15,7 @@ public class LibraryUser {
         this.activeAccount=activeAccount;
     
         //TODO Los usuarios no recibirán acceso a la biblioteca y a las notificaciones
-    //estarán formadas por texto exclusivamente
+        //estarán formadas por texto exclusivamente
     }
 
     public void setName(String name){

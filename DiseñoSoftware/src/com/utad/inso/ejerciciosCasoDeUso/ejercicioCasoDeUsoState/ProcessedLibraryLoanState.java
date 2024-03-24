@@ -11,8 +11,7 @@ public class ProcessedLibraryLoanState implements LibraryLoanState{
 
     @Override
     public void show(LibraryLoanRequestContext libraryLoanRequestContext) {
-        
-        
+        this.libraryLoanRequestContext.setCurrentState(libraryLoanRequestContext.getFinishedLibraryLoanState());
     }
     
 }

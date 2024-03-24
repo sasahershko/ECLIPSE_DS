@@ -1,11 +1,11 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoState;
+import java.util.ArrayList;
 
 public abstract class Library {
-    public void returnBook(Book book, LibraryLoanRequestContext libraryLoanRequestContext){
 
-    }
+    public Library(){}
 
-    public void processLibraryLoan(LibraryLoanRequestContext libraryLoanRequestContext){
+    public void returnBook(Book book, LibraryLoanRequestContext libraryLoanRequestContext);
 
-    }
+    public void processLibraryLoan(LibraryLoanRequestContext libraryLoanRequestContext);
 }

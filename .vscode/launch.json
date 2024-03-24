@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LibraryLoanTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoState.LibraryLoanTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
       "name": "EnumSingletonTest",
       "request": "launch",
       "mainClass": "com.utad.inso.tema2.entregas.patronSingleton.Ejercicio30.EnumSingletonTest",
