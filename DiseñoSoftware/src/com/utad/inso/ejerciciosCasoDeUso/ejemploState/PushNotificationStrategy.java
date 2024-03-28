@@ -1,4 +1,4 @@
-package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoState;
+package com.utad.inso.ejerciciosCasoDeUso.ejemploState;
 
 public class PushNotificationStrategy implements NotificationStrategy{
 

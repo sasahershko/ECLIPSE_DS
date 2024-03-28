@@ -5,6 +5,27 @@
       "type": "java",
       "name": "LibraryLoanTest",
       "request": "launch",
+      "mainClass": "com.utad.inso.ejerciciosCasoDeUso.statePrueba.LibraryLoanTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "LibraryLoanTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.ejerciciosCasoDeUso.bienSTATE.LibraryLoanTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "LibraryLoanTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.ejerciciosCasoDeUso.a.LibraryLoanTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "LibraryLoanTest",
+      "request": "launch",
       "mainClass": "com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoState.LibraryLoanTest",
       "projectName": "DiseñoSoftware"
     },

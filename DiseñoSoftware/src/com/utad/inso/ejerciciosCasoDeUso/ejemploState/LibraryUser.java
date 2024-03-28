@@ -1,4 +1,4 @@
-package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoState;
+package com.utad.inso.ejerciciosCasoDeUso.ejemploState;
 
                     //decimos que es un usuario que va a consumir notficaciones
 public class LibraryUser implements ModelPullPushObserver{
@@ -13,7 +13,9 @@ public class LibraryUser implements ModelPullPushObserver{
         this.address=address;
         this.userType=userType;
         this.activeAccount=activeAccount;
-
+    
+        //TODO Los usuarios no recibirán acceso a la biblioteca y a las notificaciones
+        //estarán formadas por texto exclusivamente
     }
 
     public void setName(String name){
@@ -47,9 +49,26 @@ public class LibraryUser implements ModelPullPushObserver{
     @Override
     public void update(ModelPullPushObservable pullPushObservable, Object o) {
 
+        /*if(o != null){
+            if(pullPushObservable instanceof LibraryLoanRequestContext){
+                //Miramos si o es instancia de Book, si lo es nos imprimirá que se ha devuelto
+                if((o instanceof Book)){
+                    System.out.println("Notification to user: "+((LibraryLoanRequestContext)pullPushObservable).getLibraryUser().getName() + " library loan returned on " + ((LibraryLoanRequestContext)pullPushObservable).getCreatedDate() + ", " +o);
+                }
+                else{
+                    System.out.println("Notification to user: " + o);
+                }
+            }
+        }*/
+
         if(o instanceof LibraryLoanNotification){
             LibraryLoanNotification notification = (LibraryLoanNotification)o;
-            System.out.println("Notification to user: " + notification.getMessage());
+            if(notification.getIsBookReturn()){
+                System.out.println("Notification to user: "+((LibraryLoanRequestContext)pullPushObservable).getLibraryUser().getName() + " library loan returned on " + ((LibraryLoanRequestContext)pullPushObservable).getCreatedDate() + ", " +notification.getMessage());
+            }
+            else{
+                System.out.println("Notification to user: " + notification.getMessage());
+            }
         }
     }
 }

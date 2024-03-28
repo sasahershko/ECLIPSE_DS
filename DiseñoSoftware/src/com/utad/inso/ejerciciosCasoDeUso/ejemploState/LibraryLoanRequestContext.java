@@ -1,4 +1,4 @@
-package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoState;
+package com.utad.inso.ejerciciosCasoDeUso.ejemploState;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -23,8 +23,8 @@ public class LibraryLoanRequestContext implements ModelPullPushObservable{
     private NotificationStrategy notificationStrategy;
 
     public void process(){
-        //quien debe procesar este método?
-        this.currentState.process(this);
+        //TODO quien debe procesar este método?
+        this.currentState.show(this);
     }
 
     public LibraryLoanRequestContext(LoansLibrary loansLibrary, Book book, LibraryUser libraryUser){
@@ -52,7 +52,7 @@ public class LibraryLoanRequestContext implements ModelPullPushObservable{
             attach(libraryUser);
         }
 
-        //indicamos que la reserva comienza en estado Creada??
+        //TODO como indicamos que la reserva comienza en estado Creada??
         this.currentState = createdLibraryLoanState;
     }
 
