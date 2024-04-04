@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MobileClientTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronFactory.ejercicio33.MobileClientTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "AnimalFactoryTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronFactory.ejercicio32.AnimalFactoryTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
       "name": "LibraryLoanTest",
       "request": "launch",
       "mainClass": "com.utad.inso.ejerciciosCasoDeUso.statePrueba.LibraryLoanTest",

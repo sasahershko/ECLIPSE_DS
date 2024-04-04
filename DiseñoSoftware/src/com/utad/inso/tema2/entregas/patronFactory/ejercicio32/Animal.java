@@ -1,0 +1,6 @@
+package com.utad.inso.tema2.entregas.patronFactory.ejercicio32;
+
+public interface Animal {
+    public Integer getNumLegs();
+    public void noise();
+}
