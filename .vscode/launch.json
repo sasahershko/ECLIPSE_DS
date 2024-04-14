@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DaemonGameTest",
+      "request": "launch",
+      "mainClass": "com.utad.inso.tema2.entregas.patronAbstractFactory.ejercicio37.DaemonGameTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
       "name": "MobileClientTest",
       "request": "launch",
       "mainClass": "com.utad.inso.tema2.entregas.patronFactory.ejercicio33.MobileClientTest",
