@@ -1,6 +1,8 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoAbstractFactory;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 public class GameController {
     private static GameController gameController;
@@ -32,16 +34,57 @@ public class GameController {
         return this.enemyAbstractFactory.createWitch();
     }
 
-    public void play(){
-        System.out.println("Creamos un demonio en el mundo 1 " + enemyAbstractFactory.createDaemon());
-        System.out.println("Creamos una bruja en el mundo 1 " + enemyAbstractFactory.createWitch());
-
-        System.out.println("Cambiamos de mundo");
-        setEnemyAbstractFactory(new World2Factory());
-
-        System.out.println("Creamos un demonio en el mundo 2 " + enemyAbstractFactory.createDaemon());
-        System.out.println("Creamos una bruja en el mundo 2 " + enemyAbstractFactory.createWitch());
+    public void play() {
+        //empieza el juego en el Mundo 1 y muestra detalles específicos de enemigos
+        System.out.println("Game Starts in WORLD 1");
+        switchWorld(new World1Factory());
+        printInitialEnemies();
     
-        System.out.println("Juego finalizado!!");
+        //cambio a Mundo 2 y muestra detalles específicos de enemigos
+        switchWorld(new World2Factory());
+        printInitialEnemies();
+    
+        //generamos estadísticas para cada mundo
+        switchWorld(new World1Factory());
+        generateAndPrintStats();
+    
+        switchWorld(new World2Factory());
+        generateAndPrintStats();
+    
+        System.out.println("Game finished!!");
     }
+    
+    private void switchWorld(EnemyAbstractFactory factory) {
+        System.out.println("==============" + "Switching worlds, moving to " + factory.getWorldName() + "==============");
+        setEnemyAbstractFactory(factory);
+    }
+    
+    private void printInitialEnemies() {
+        Daemon daemon = this.enemyAbstractFactory.createDaemon();
+        Witch witch = this.enemyAbstractFactory.createWitch();
+        System.out.println("Created a daemon in " + daemon);
+        System.out.println("Created a witch in " + witch);
+    }
+    
+    private void generateAndPrintStats() {
+        List<Enemy> enemies = new ArrayList<Enemy>();
+        int daemonCount = 0;
+        int witchCount = 0;
+        for (int i = 0; i < 100; i++) {
+            Enemy enemy = this.enemyAbstractFactory.createRandomEnemy();
+            enemies.add(enemy);
+            if (enemy instanceof Daemon) {
+                daemonCount++;
+            } else if (enemy instanceof Witch) {
+                witchCount++;
+            }
+        }
+        System.out.println("Daemons (" + daemonCount + "), Witches (" + witchCount + ") proportion of Daemons " + ((int) ((double) daemonCount / (daemonCount + witchCount) * 100)) + " % (rounded)");
+        //escogemos un enemigo Random de los que hemos creado:
+        Random random = new Random();
+        //escogemos índice aleatorio
+        Enemy randomEnemy = enemies.get(random.nextInt(enemies.size())); 
+        System.out.println("Example of a random enemy in " + randomEnemy);
+    }
+    
 }

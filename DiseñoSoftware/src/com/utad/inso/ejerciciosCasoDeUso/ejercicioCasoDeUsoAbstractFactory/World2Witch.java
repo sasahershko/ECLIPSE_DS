@@ -5,8 +5,8 @@ public class World2Witch extends CommonEnemy implements Witch{
     public String magicPower;
 
     public World2Witch(){
-        super("Big witch", World.LEVEL2.getComplexFactor()*20, 4);
-        this.magicPower = World1Witch.DEFAULT_MAGIC_POWER;
+        super("Big witch", World.LEVEL2.getComplexFactor()*15, 4);
+        this.magicPower = World2Witch.DEFAULT_MAGIC_POWER;
     } 
 
     @Override
@@ -30,6 +30,6 @@ public class World2Witch extends CommonEnemy implements Witch{
     }
     
     public String toString(){
-        return "World2Witch [name=" + this.name + ", power=" + this.power + ", lives=" + this.lives + ", magicPower=" + this.magicPower+ "]"; 
+        return "WORLD 2 -> World2Witch [name=" + this.name + ", power=" + this.power + ", lives=" + this.lives + ", magicPower=" + this.magicPower+ "]"; 
     }
 }

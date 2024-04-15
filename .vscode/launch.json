@@ -5,6 +5,13 @@
       "type": "java",
       "name": "DaemonGameTest",
       "request": "launch",
+      "mainClass": "com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoAbstractFactory.DaemonGameTest",
+      "projectName": "DiseñoSoftware"
+    },
+    {
+      "type": "java",
+      "name": "DaemonGameTest",
+      "request": "launch",
       "mainClass": "com.utad.inso.tema2.entregas.patronAbstractFactory.ejercicio37.DaemonGameTest",
       "projectName": "DiseñoSoftware"
     },

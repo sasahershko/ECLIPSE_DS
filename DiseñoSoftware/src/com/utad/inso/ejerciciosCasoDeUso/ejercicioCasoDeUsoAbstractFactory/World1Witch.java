@@ -1,11 +1,11 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoAbstractFactory;
 
 public class World1Witch extends CommonEnemy implements Witch{
-    public static final String DEFAULT_MAGIC_POWER = "wand";
+    public static final String DEFAULT_MAGIC_POWER = "Magic Wand";
     public String magicPower;
 
     public World1Witch(){
-        super("Witch", World.LEVEL1.getComplexFactor()*10, 2);
+        super("Witch", World.LEVEL1.getComplexFactor()*15, 2);
         this.magicPower = World1Witch.DEFAULT_MAGIC_POWER;
     } 
 
@@ -30,6 +30,6 @@ public class World1Witch extends CommonEnemy implements Witch{
     }
 
     public String toString(){
-        return "World1Witch [name=" + this.name + ", power=" + this.power + ", lives=" + this.lives + ", magicPower=" + this.magicPower + "]"; 
+        return "WORLD 2 -> World1Witch [name=" + this.name + ", power=" + this.power + ", lives=" + this.lives + ", magicPower=" + this.magicPower + "]"; 
     }
 }
