@@ -1,6 +1,6 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoAbstractFactory;
 
-public class World2Witch extends CommonEnemy implements Witch{
+public class World2Witch extends AbstractCommonEnemy implements Witch{
     public static final String DEFAULT_MAGIC_POWER = "Magic wand and magic broom";
     public String magicPower;
 

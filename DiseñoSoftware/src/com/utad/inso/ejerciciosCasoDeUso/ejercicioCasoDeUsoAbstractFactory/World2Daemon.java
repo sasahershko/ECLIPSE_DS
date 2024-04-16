@@ -1,6 +1,6 @@
 package com.utad.inso.ejerciciosCasoDeUso.ejercicioCasoDeUsoAbstractFactory;
 
-public class World2Daemon extends CommonEnemy implements Daemon{
+public class World2Daemon extends AbstractCommonEnemy implements Daemon{
     public static final DaemonColor DEFAULT_COLOR = DaemonColor.GREEN;
     public DaemonColor color;
 
