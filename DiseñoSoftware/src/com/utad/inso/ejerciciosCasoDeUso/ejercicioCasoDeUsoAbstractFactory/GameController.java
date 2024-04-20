@@ -51,6 +51,7 @@ public class GameController {
         switchWorld(new World2Factory());
         generateAndPrintStats();
     
+        //terminamos juego
         System.out.println("Game finished!!");
     }
     
@@ -67,11 +68,16 @@ public class GameController {
     }
     
     private void generateAndPrintStats() {
+        //creamos lista de enemigos para guardarlos y más adelante poder escoger uno aleatorio
         List<Enemy> enemies = new ArrayList<Enemy>();
+        //contadores de enemigos
         int daemonCount = 0;
         int witchCount = 0;
+
+        //crearemos 100 enemigos(dependiendo en qué mundo la proporción será diferente)
         for (int i = 0; i < 100; i++) {
             Enemy enemy = this.enemyAbstractFactory.createRandomEnemy();
+            //vamos añadiendo los enemigos a nuestra lista
             enemies.add(enemy);
             if (enemy instanceof Daemon) {
                 daemonCount++;
